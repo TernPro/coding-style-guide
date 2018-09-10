@@ -2,6 +2,7 @@
 ## Table of Contents
 
 - [Code Formatting](#code-formatting)
+- [Basic Rules](#basic-rules)
 - [Component Usage](#component-usage)
 - [Naming](#naming)
 - [File Organization](#file-names)
@@ -11,9 +12,18 @@
 
 For code formatting use [Prettier](https://github.com/prettier/prettier) with trailing commas set to 'es5' and single-quotes set to true.
 
+## Basic Rules
+
+* Use common components over creating a new one whenever possible
+* Use utility methods and constants from `slope-shared` whenever possible
+
 ## Component Usage
 
-* Always declare prop types. If a prop is not required, define a default prop whenever possible.
+* Always declare prop types
+  * If a prop is not required, define a default prop whenever possible
+  * Prop declarations should be in alphabetical order
+* Props should be passed to components in alphabetical order
+* Use stateless components whenever possible
 
 * If the component has state, refs, or needs lifecycle menthods, use `class extends React.Component`
   * Declare state, default props, and prop types as static variables whenever possible
@@ -68,7 +78,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  description: "Default description",
+  description: 'Default description',
 };
 ```
 
