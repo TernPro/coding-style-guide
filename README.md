@@ -2,7 +2,7 @@
 ## Table of Contents
 
 - [Code Formatting](#code-formatting)
-- [Component Usage](#component-usage(
+- [Component Usage](#component-usage)
 - [Naming](#naming)
 - [File Organization](#file-names)
 
@@ -44,13 +44,13 @@ class Header extends React.Component {
   render() {
     return (
       // ...
-    )
+    );
   }
 }
 ```
 
 * For components that do not use state, refs, or lifecycle methods, use stateless components
-  * Do not use fat arrow functions for component declarations
+  * Use regular functions, not arrow functions, for component declarations
   * Destructure params 
 
 ```js
@@ -64,11 +64,11 @@ function Header({ name, description, ...props }) {
 Header.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   description: "Default description",
-}
+};
 ```
 
 ## Naming
