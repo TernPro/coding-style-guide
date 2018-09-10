@@ -14,10 +14,10 @@ For code formatting use [Prettier](https://github.com/prettier/prettier) with tr
 * Use the .js extension for React components.
 * Use PascalCase for component names.
   * The component file name and css file name should have the same name as the component.
-* Use Camel case for all other files
+* Use Camel case for all other files, e.g. `withTooltip.js`
 * Use Camel case for CSS classnames
 
-```
+```css
 // bad
 .lightbox-container {
   // ...
