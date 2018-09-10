@@ -5,6 +5,7 @@
 - [Component Usage](#component-usage)
 - [Naming](#naming)
 - [File Organization](#file-names)
+- [File Imports](#file-imports)
 
 ## Code Formatting
 
@@ -94,3 +95,29 @@ Header.defaultProps = {
 ## File Organization
 
 There should be no more than one component per file. Component file names are capitalized and match the name of the component inside. An index.js file is included for the default export.
+
+## File Imports
+
+* These have not been finalized *
+
+* Imports are roughly separated in to the following blocks: external imports, actions and selectors, external components (e.g. `material-ui`), internal components, styles
+* Lodash imports are at the top followed by React and PropTypes
+* Absolute are above relative imports
+* Default imports are above named imports
+* Imports are sorted in ascending alphabetical order within the above rules
+* Named imports are imported in alphabetical order
+
+```js
+// good
+import { filter, isEmpty } from lodash;
+import React, { Component } from 'react';
+import cx from 'classnames';
+
+import { createItem } from '../../actionCreators';
+import { getItems } from '../../selectors';
+
+import Header from '../Header';
+import { IconButton } from '../../../common/components';
+
+import styles from './CurrentView.css';
+```
