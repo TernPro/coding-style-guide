@@ -98,7 +98,7 @@ There should be no more than one component per file. Component file names are ca
 
 ## File Imports
 
-* These have not been finalized *
+*These have not been finalized*
 
 * Imports are roughly separated in to the following blocks: external imports, actions and selectors, external components (e.g. `material-ui`), internal components, styles
 * Lodash imports are at the top followed by React and PropTypes
