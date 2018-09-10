@@ -2,11 +2,32 @@
 ## Table of Contents
 
 - [Code Formatting](#code-formatting)
+- [Naming](#naming)
 - [File Organization](#file-names)
 
 ## Code Formatting
 
 For code formatting use [Prettier](https://github.com/prettier/prettier) with trailing commas set to 'es5' and single-quotes set to true.
+
+## Naming
+
+* Use the .js extension for React components.
+* Use PascalCase for component names.
+  * The component file name and css file name should have the same name as the component.
+* Use Camel case for all other files
+* Use Camel case for CSS classnames
+
+```
+// bad
+.lightbox-container {
+  // ...
+}
+
+// good
+.lightboxContainer {
+  // ...
+}
+```
 
 ## File Organization
 
