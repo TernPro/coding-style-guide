@@ -60,7 +60,7 @@ class Header extends React.Component {
 }
 ```
 
-* Method order (modified from the [React Style Guide](https://github.com/airbnb/javascript/tree/master/react))
+* Class method order (modified from the [React Style Guide](https://github.com/airbnb/javascript/tree/master/react))
 
 1. optional static methods
 1. constructor
