@@ -60,6 +60,21 @@ class Header extends React.Component {
 }
 ```
 
+* Method order (modified from the [React Style Guide](https://github.com/airbnb/javascript/tree/master/react))
+
+1. optional static methods
+1. constructor
+1. getChildContext
+1. componentWillMount
+1. componentDidMount
+1. componentWillReceiveProps
+1. shouldComponentUpdate
+1. componentWillUpdate
+1. componentDidUpdate
+1. componentWillUnmount
+1. custom methods (in alphabetical order)
+1. render
+
 * For components that do not use state, refs, or lifecycle methods, use stateless components
   * Use regular functions, not arrow functions, for component declarations
   * Destructure params 
